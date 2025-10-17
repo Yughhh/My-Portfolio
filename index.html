@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="introBar">
+            <div class="Portfolio">
+                <div class="yughs">Yugh's</div>Portfolio.
+            </div>
+            <div class="introBarOp">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <body>
+
+        <!-- First page (Home Page): -->
+
+        <div class="homePage" id="home">
+            <div class="writtenData">
+                <div class="introText">
+                    <p>Hello, I'm</p>
+                    <h1>Yugh Singh Rana</h1>
+                    <h2><span id="element"></span></h2>
+                </div>
+                <div class="introMsg">
+                    I believe websites can be more diverse and inspiring . With a mission to present the possibilities
+                    of web design and web development, I am pursuing new expressions through experiments and thoughts.
+                </div>
+
+            </div>
+            <div class="devImage">
+                <img src="Developer png.png" alt="Developer Image" class="img-reveal">
+            </div>
+        </div>
+
+
+        <!-- Second Page (About Page) -->
+
+        <div class="aboutPage" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="column1">
+                        <img src="Developer png new.png" alt="About Image" class="img-reveal">
+                    </div>
+                    <div class="column2">
+                        <h1 class="sub-title autoShow">About me</h1>
+                        <p class="autoShow" id="bigPara">Hi! I'm a software engineering student with a growing passion for web
+                            development. I'm currently learning how to build responsive, user-friendly websites using
+                            modern technologies like HTML, CSS, JavaScript, and frameworks like React. I enjoy solving
+                            problems through code and turning ideas into functional digital experiences. Whether it's
+                            creating a personal project or contributing to something bigger, I'm always looking for
+                            opportunities to learn, improve, and build. Right now, I'm focused on sharpening my
+                            front-end skills and exploring back-end development to become a well-rounded full-stack
+                            developer. Let’s build something great together!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link autoShow" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links autoShow" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links autoShow" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab autoShow" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>Video Editing</span><br>Edit Video using After Effects</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents autoShow" id="experience">
+                            <ul>
+                                <li><span>2021 - 2024</span><br>Video Editing Free Lancing</li>
+                                <li><span>2023 - Current</span><br>Graduation in Computer Science</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents autoShow" id="education">
+                            <ul>
+                                <li><span>2023 - 2027</span><br>B.Tech. in Computer Science Engineering from Babu
+                                    Banarasi Das University, Lucknow</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Third Page (Skills): -->
+        <div class="skillsPage autoShow" id="skills">
+            <div class="container">
+                <h1 class="sub-title skills-heading autoShow">Skills</h1>
+                <div class="services-list">
+                    <div class="img-reveal">
+                        <i class="fa-brands fa-figma"></i>
+                        <h2>Web Design</h2>
+                        <p>Creating visually appealing and user-friendly website layouts using design tools like Figma
+                            and Adobe XD.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="img-reveal">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>I design and develop responsive, user-friendly websites using modern web technologies.</p>
+                        <a href="#" id="readmore">Read More</a>
+                    </div>
+                    <div class="img-reveal">
+                        <i class="fa-solid fa-video"></i>
+                        <h2>Video Editing</h2>
+                        <p>I edit and create engaging videos using Adobe After Effects to bring ideas to life with
+                            motion and creativity.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Fourth Page (Projects): -->
+
+        <div class="projectsPage autoShow" id="projects">
+            <div class="container">
+                <h1 class="sub-title projects-headin autoShow">My Projects</h1>
+                <div class="work-list">
+                    <div class="work autoShow">
+                        <img src="Amazon Clone SS.png" class="img-reveal">
+                        <div class="layer">
+                            <h3 style='color:white'>Amazon Website Clone</h3>
+                            <p style='color:white'>Developed an Amazon clone project featuring a responsive UI, product
+                                listings, and user-friendly design to replica real-world e-commerce functionality.</p>
+                            <a href="Amazon Clone/Amazon Clone.html" target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work autoShow">
+                        <img src="Currency Converter SS.png" class="img-reveal">
+                        <div class="layer">
+                            <h3 style='color:white'>Currency Converter</h3>
+                            <p style='color:white'>Built a currency converter project that allows users to seamlessly
+                                convert between multiple currencies with real-time exchange rate updates.</p>
+                            <a href="Currency Converter/Currency Converter.html" target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work autoShow">
+                        <img src="Stone Paper Scissor Game SS.png" class="img-reveal">
+                        <div class="layer">
+                            <h3 style='color:white'>Rock Paper Scissor Game</h3>
+                            <p style='color:white'>Created an interactive Rock-Paper-Scissors game with a simple UI and
+                                smooth gameplay experience using JavaScript.</p>
+                            <a href="Stone Paper Scissor Game/Game.html" target="_main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn autoShow">See more</a>
+            </div>
+        </div>
+
+
+        <!-- Fifth Page (Contact Me): -->
+
+        <div class="contactPage" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title autoShow">Contact Me</h1>
+                        <p style="color:white" class="autoShow"><i class="fa-solid fa-paper-plane"></i>yugh.rana.11@gmail.com</p>
+                        <p style="color:white" class="autoShow"><i class="fa-solid fa-phone"></i>7307906200</p>
+                        <div class="social-icons autoShow">
+                            <a href="https://www.facebook.com/yugh.memer" target="_main"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/yugh_editz?igsh=MTlmb3FwYzJoZGNsMg==" target="_main"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/yogesh-singh-rana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_main"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.whatsapp.com/" target="_main"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <a href="Yogesh_Singh_Rana_CV final.pdf" target="_main" download class="btn btn2 autoShow">Download CV</a>
+                    </div>
+                    <div class="contact-right autoShow">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2 autoShow">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="color:white">Copyright © Yugh. Made with<i class="fa-solid fa-heart"></i>by Yugh Singh Rana</p>
+        </div>
+
+
+
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Designer', 'Video Editor', 'Web Developer'],
+                typeSpeed: 30,
+            });
+        </script>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+
+</html>
